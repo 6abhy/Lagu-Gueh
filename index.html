@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>My Music Player</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Space Mono Bold -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="player">
+
+    <!-- VINYL -->
+    <img src="kaset.png" class="vinyl">
+
+    <!-- TEXT / INFO -->
+    <div class="info">
+        <p class="fav">one of my fav songs</p>
+        <h1>yg denger langsung almarhum</h1>
+        <p class="artist">s3batangzmagnum</p>
+
+        <div class="line"></div>
+
+        <button id="playBtn">▶</button>
+    </div>
+
+</div>
+
+<!-- Hidden SoundCloud player -->
+<iframe
+id="scplayer"
+width="0"
+height="0"
+scrolling="no"
+frameborder="no"
+allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https://soundcloud.com/bagas-ab-675725288/yg-denger-langsung-almarhum">
+</iframe>
+
+<!-- SoundCloud API -->
+<script src="https://w.soundcloud.com/player/api.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
